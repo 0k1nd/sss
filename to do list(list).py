@@ -29,7 +29,7 @@ def view_tasks():
 def delete_task():
     for i, element in enumerate(tasks):
         print((i + 1), element)
-    del_task = int(input('введите название задачи, которую хотите удалить ='))
+    del_task = int(input('введите номер задачи, которую хотите удалить ='))
     tasks.pop(del_task - 1)
 
 
