@@ -1,5 +1,5 @@
 class Car:
-    __fuel_level = 10
+    _fuel_level = 10
     
     def __init__(self, brand, model, year, mileage, engine_started = False):
         self.brand = brand
@@ -61,4 +61,7 @@ mycar.get_fuel_level()
 mycar.refuel(231234)
 mycar.get_fuel_level()
 mycar.get_info()
+
+mycar._fuel_level = 12
+
 
