@@ -7,7 +7,7 @@ class Building:
         self.city = city
         
     def get_info(self):
-        print('Year:', self.year, 'City:', self.city)
+        print('Year:', self.year,'|', 'City:', self.city)
 
 
 class House(Building):
@@ -25,7 +25,7 @@ class House(Building):
         
     def get_info(self):
         super().get_info()
-        print('Material:', self.material, 'Area of bUilding:', self.area, 'Color:', self.color, 'Floors:', self.floors)
+        print('Material:', self.material,'|', 'Area of bUilding:', self.area,'m**2','|', 'Color:', self.color,'|', 'Floors:', self.floors)
 
 
 class School(House):
@@ -36,10 +36,22 @@ class School(House):
         
     def get_info(self):
         super().get_info()
-        print('People:', self.people)
+        print('People:', self.people)    
 
+class Shop(House):
+    def __init__(self, year, city, material, area, color, floors, stores_profit = 0, fullness_of_the_products = 0):
+        super(Shop, self).__init__(year, city, material, area, color, floors)
+        self.stores_profit = stores_profit
+        self.fullness_of_the_products = fullness_of_the_products
+        
+    def get_info(self):
+        super().get_info()
+        print('stores profit =', self.stores_profit, '$ per mounth')
+        print('fullness_of_the_products =', self.fullness_of_the_products, '%')
 
-    
-
-class shop(House):
+class Drug_store(Shop):
     pass
+     
+pharmacy = Drug_store(1944, 'New York', 'concrete', 1256, 'red', 2, 1200, 98)
+
+pharmacy.get_info()

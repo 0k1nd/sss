@@ -1,9 +1,4 @@
 class Car:
-    brand = None
-    model = None
-    year = 0
-    mileage = 0
-    engine_started = False
     __fuel_level = 10
     
     def __init__(self, brand, model, year, mileage, engine_started = False):
@@ -52,6 +47,7 @@ class Car:
         print('now mileage =', self.mileage)
         print('---')
         
+Car.brand="fdsfsdf"
 mycar = Car('toyota', 'corolla', 2000, 32000)
 mycar.get_info()
 mycar.start_enegine()
