@@ -11,10 +11,6 @@ class Building:
 
 
 class House(Building):
-    material = None
-    area = 0
-    color = None
-    floors = 0
     
     def __init__(self, year, city, material, area, color, floors):
         super(House, self).__init__(year, city)
@@ -29,7 +25,6 @@ class House(Building):
 
 
 class School(House):
-    people = 0
     def __init__(self, year, city, material, area, color, floors, people):
         super(School, self).__init__(year, city, material, area, color, floors)
         self.people = people
