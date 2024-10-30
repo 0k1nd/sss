@@ -6,6 +6,7 @@ class Animal():
         
     def make_sound(self):
         print(self.sound.upper())
+        print('-----')
         
     def description(self):
         print('name:', self.name)
@@ -22,6 +23,7 @@ class Dog(Animal):
         super().description()
         print('breed:', self.breed)
         print('color', self.color)
+        print('-----')
         
 class Cat(Animal):
     
@@ -34,6 +36,7 @@ class Cat(Animal):
         super().description()
         print('breed:', self.breed)
         print('color', self.color)
+        print('-----')
         
         
 cat1 = Cat('Lulu', 'бу испугался не бойся я друг я тебя не обижу', 'Sphinx', 'white')
