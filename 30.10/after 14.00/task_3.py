@@ -6,12 +6,11 @@ class Author():
         
     def display_books(self):
         for i, element in enumerate(self.books):
-            print((i + 1), element)
+            print((i + 1), repr(element))
         
     def add_book(self, book):
-        full_title = [str(book.title), str(book.year)]
-        full_title_str = ",".join(full_title) 
-        self.books.append(full_title_str)
+        book_fd = Book(book.title, book.year)
+        self.books.append(book_fd)
         
     def get_books_by_year(self, year):
         finded_book =[]
@@ -25,6 +24,9 @@ class Book():
     def __init__(self, title, year):
         self.title = title
         self.year = year
+        
+    def __repr__(self):
+        return f'(\'{self.title}\', {self.year})'
     
 ew = Author('Paulo Coelho') 
 rer = Book('s545as', 1944)
@@ -40,6 +42,7 @@ ew.add_book(rfv)
 ew.add_book(wsx)
 ew.add_book(by)
 ew.display_books()
+ew.get_books_by_year(1944)
 
         
         
