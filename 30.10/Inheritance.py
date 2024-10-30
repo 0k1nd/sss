@@ -30,7 +30,7 @@ class House(Building):
 
 class School(House):
     people = 0
-    def __init__(self, people, year, city):
+    def __init__(self, year, city, material, area, color, floors, people):
         super(School, self).__init__(year, city, material, area, color, floors)
         self.people = people
         
