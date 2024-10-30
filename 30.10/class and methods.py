@@ -1,4 +1,4 @@
-class cat:
+class Cat:
     name = None
     age = None
     color = None
@@ -19,8 +19,8 @@ class cat:
         print(self.color)
         print(self.isHappy)
         
-cat1 = cat('ede', 3, 'red', True) 
-cat2 = cat()
+cat1 = Cat('ede', 3, 'red', True) 
+cat2 = Cat()
 
 cat1.get_data()
 print('----------------')
