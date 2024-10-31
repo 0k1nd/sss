@@ -6,18 +6,17 @@ class Author():
         
     def display_books(self):
         for i, element in enumerate(self.books):
-            print((i + 1), repr(element))
+            print((i + 1), element)
         
     def add_book(self, book):
-        book_fd = Book(book.title, book.year)
-        self.books.append(book_fd)
+        self.books.append(book)
         
     def get_books_by_year(self, year):
         finded_book =[]
         for book in self.books:
             if book.year == year:
-                finded_book.append(book)
-        print('list of books in', year, '=', finded_book)
+                finded_book.append(book.title)
+        return finded_book
         
 class Book():
     
@@ -43,6 +42,7 @@ ew.add_book(wsx)
 ew.add_book(by)
 ew.display_books()
 ew.get_books_by_year(1944)
+print(ew.get_books_by_year(1944))
 
         
         
