@@ -15,7 +15,7 @@ class Animal():
 class Dog(Animal):
     
     def __init__(self, name, sound, breed, color):
-        super(Dog, self).__init__(name, sound)
+        super(self).__init__(name, sound)
         self.breed = breed
         self.color = color
         
@@ -28,7 +28,7 @@ class Dog(Animal):
 class Cat(Animal):
     
     def __init__(self, name, sound, breed, color):
-        super(Cat, self).__init__(name, sound)
+        super(self).__init__(name, sound)
         self.breed = breed
         self.color = color
         

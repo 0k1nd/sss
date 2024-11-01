@@ -1,0 +1,564 @@
+[
+    {
+        "label": "abc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "abc",
+        "description": "abc",
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "collect_ind",
+        "kind": 2,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "def collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "print_DICK",
+        "kind": 2,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\n#for (key, value) in nums_dict.items():\n    #result = target - key\n    #if nums_dict[result]:\n       # print(value)\ndef get_result(scr):",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "get_result",
+        "kind": 2,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)\nget_result(nums_dict)",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "nums = [1, 3, 6, 7, 8, 9, 10, 23, 30, 45, 98, 22, 1, 5, 15, 100]\ntarget = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "target = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "nums_dict",
+        "kind": 5,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "nums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\n#for (key, value) in nums_dict.items():\n    #result = target - key\n    #if nums_dict[result]:\n       # print(value)\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "29.10.to do list v2",
+        "description": "29.10.to do list v2",
+        "peekOfCode": "def main():\n    while True:\n        x = int(input(' 1.add_task \\n 2.view_tasks \\n 3.delete_task \\n 4.exit \\n  номер действия = '))\n        if x == 4:\n            break\n        match x:\n                case 1:\n                    add_task()\n                case 2:\n                    view_tasks() ",
+        "detail": "29.10.to do list v2",
+        "documentation": {}
+    },
+    {
+        "label": "add_task",
+        "kind": 2,
+        "importPath": "29.10.to do list v2",
+        "description": "29.10.to do list v2",
+        "peekOfCode": "def add_task():\n    key = input('введите название задачи: ')\n    value = 'описание пустое'\n    tasks[key] = value\ndef view_tasks():\n    for index, (keys, values) in enumerate(tasks.items()):\n        print(f\" {index + 1}  {keys}\")\ndef delete_task():\n    for keys in tasks.items():\n        print(keys)",
+        "detail": "29.10.to do list v2",
+        "documentation": {}
+    },
+    {
+        "label": "view_tasks",
+        "kind": 2,
+        "importPath": "29.10.to do list v2",
+        "description": "29.10.to do list v2",
+        "peekOfCode": "def view_tasks():\n    for index, (keys, values) in enumerate(tasks.items()):\n        print(f\" {index + 1}  {keys}\")\ndef delete_task():\n    for keys in tasks.items():\n        print(keys)\n        x = input('введите название задачи, которую хотите удалить =')\n        del tasks[x]\nmain()",
+        "detail": "29.10.to do list v2",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "29.10.to do list v2",
+        "description": "29.10.to do list v2",
+        "peekOfCode": "def delete_task():\n    for keys in tasks.items():\n        print(keys)\n        x = input('введите название задачи, которую хотите удалить =')\n        del tasks[x]\nmain()",
+        "detail": "29.10.to do list v2",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "kind": 5,
+        "importPath": "29.10.to do list v2",
+        "description": "29.10.to do list v2",
+        "peekOfCode": "tasks = {}\ndef main():\n    while True:\n        x = int(input(' 1.add_task \\n 2.view_tasks \\n 3.delete_task \\n 4.exit \\n  номер действия = '))\n        if x == 4:\n            break\n        match x:\n                case 1:\n                    add_task()\n                case 2:",
+        "detail": "29.10.to do list v2",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "29.10.to do list(list)",
+        "description": "29.10.to do list(list)",
+        "peekOfCode": "def main():\n    while True:\n        x = int(input(' 1.add_task \\n 2.view_tasks \\n 3.delete_task \\n 4.exit \\n  номер действия = '))\n        if x == 4:\n            break\n        match x:\n                case 1:\n                    add_task()\n                case 2:\n                    view_tasks() ",
+        "detail": "29.10.to do list(list)",
+        "documentation": {}
+    },
+    {
+        "label": "add_task",
+        "kind": 2,
+        "importPath": "29.10.to do list(list)",
+        "description": "29.10.to do list(list)",
+        "peekOfCode": "def add_task():\n    task_name = str(input('введите название задачи: '))\n    tasks.append(task_name)\ndef view_tasks():\n    for i, element in enumerate(tasks):\n        print((i + 1), element)\ndef delete_task():\n    for i, element in enumerate(tasks):\n        print((i + 1), element)\n    del_task = int(input('введите номер задачи, которую хотите удалить ='))",
+        "detail": "29.10.to do list(list)",
+        "documentation": {}
+    },
+    {
+        "label": "view_tasks",
+        "kind": 2,
+        "importPath": "29.10.to do list(list)",
+        "description": "29.10.to do list(list)",
+        "peekOfCode": "def view_tasks():\n    for i, element in enumerate(tasks):\n        print((i + 1), element)\ndef delete_task():\n    for i, element in enumerate(tasks):\n        print((i + 1), element)\n    del_task = int(input('введите номер задачи, которую хотите удалить ='))\n    tasks.pop(del_task - 1)\nmain()",
+        "detail": "29.10.to do list(list)",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "29.10.to do list(list)",
+        "description": "29.10.to do list(list)",
+        "peekOfCode": "def delete_task():\n    for i, element in enumerate(tasks):\n        print((i + 1), element)\n    del_task = int(input('введите номер задачи, которую хотите удалить ='))\n    tasks.pop(del_task - 1)\nmain()",
+        "detail": "29.10.to do list(list)",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "kind": 5,
+        "importPath": "29.10.to do list(list)",
+        "description": "29.10.to do list(list)",
+        "peekOfCode": "tasks = []\ndef main():\n    while True:\n        x = int(input(' 1.add_task \\n 2.view_tasks \\n 3.delete_task \\n 4.exit \\n  номер действия = '))\n        if x == 4:\n            break\n        match x:\n                case 1:\n                    add_task()\n                case 2:",
+        "detail": "29.10.to do list(list)",
+        "documentation": {}
+    },
+    {
+        "label": "to_do_list",
+        "kind": 2,
+        "importPath": "29.10.to do list",
+        "description": "29.10.to do list",
+        "peekOfCode": "def to_do_list():\n    print('Выберите действие:')\n    act = int(input(' 1. Добавить задачу \\n 2. Просмотреть список задач \\n 3. Удалить задачу \\n 4. Выйти из программы \\n  номер действия = '))\n    if act == 1:\n        key = input('введите название задачи: ')\n        value = input('описание задачи: ')\n        tasks[key] = value\n    elif act == 2:\n        for index, (keys, values) in enumerate(tasks.items()):\n            print(f\" {index + 1}  {values}\")",
+        "detail": "29.10.to do list",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "kind": 5,
+        "importPath": "29.10.to do list",
+        "description": "29.10.to do list",
+        "peekOfCode": "tasks = {\n'task_1': 1,\n'task_2':'London',\n'task_4':320,\n'task_52':1010,\n'task_7':99,\n'task_9': None,\n'task_89': None,\n'task_90':'G1/0/11'\n}",
+        "detail": "29.10.to do list",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_1",
+        "description": "30.10.after 14.00.task_1",
+        "peekOfCode": "class Animal():\n    def __init__(self, name, sound):\n        self.name = name\n        self.sound = sound\n    def make_sound(self):\n        print(self.sound.upper())\n        print('-----')\n    def description(self):\n        print('name:', self.name)\n        print('sound:', self.sound)",
+        "detail": "30.10.after 14.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_1",
+        "description": "30.10.after 14.00.task_1",
+        "peekOfCode": "class Dog(Animal):\n    def __init__(self, name, sound, breed, color):\n        super(self).__init__(name, sound)\n        self.breed = breed\n        self.color = color\n    def description(self):\n        super().description()\n        print('breed:', self.breed)\n        print('color', self.color)\n        print('-----')",
+        "detail": "30.10.after 14.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "Cat",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_1",
+        "description": "30.10.after 14.00.task_1",
+        "peekOfCode": "class Cat(Animal):\n    def __init__(self, name, sound, breed, color):\n        super(self).__init__(name, sound)\n        self.breed = breed\n        self.color = color\n    def description(self):\n        super().description()\n        print('breed:', self.breed)\n        print('color', self.color)\n        print('-----')",
+        "detail": "30.10.after 14.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "cat1",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_1",
+        "description": "30.10.after 14.00.task_1",
+        "peekOfCode": "cat1 = Cat('Lulu', 'бу испугался не бойся я друг я тебя не обижу', 'Sphinx', 'white')\ncat1.description()\ncat1.make_sound()\ndod1 = Dog('qwe', 'gap', 'alabay', 'white')\ndod1.description()\ndod1.make_sound()",
+        "detail": "30.10.after 14.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "dod1",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_1",
+        "description": "30.10.after 14.00.task_1",
+        "peekOfCode": "dod1 = Dog('qwe', 'gap', 'alabay', 'white')\ndod1.description()\ndod1.make_sound()",
+        "detail": "30.10.after 14.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "Shap",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_2",
+        "description": "30.10.after 14.00.task_2",
+        "peekOfCode": "class Shape (abc.ABC):\n    @abc.abstractmethod\n    def area(self):\n        pass\n    def description(self):  \n        print (self.__class__.__name__)\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    def area(self):",
+        "detail": "30.10.after 14.00.task_2",
+        "documentation": {}
+    },
+    {
+        "label": "Circle",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_2",
+        "description": "30.10.after 14.00.task_2",
+        "peekOfCode": "class Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    def area(self):\n        area = self.radius * self.radius * 3.14\n        print('area =', area)\n        print('---')\n    def __str__(self):\n        print('Circle')\n        print('radius =', self.radius)",
+        "detail": "30.10.after 14.00.task_2",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_2",
+        "description": "30.10.after 14.00.task_2",
+        "peekOfCode": "class Square(Shape):\n    def __init__(self, side):\n        self.side = side\n    def area(self):\n        area = self.side ** 2\n        print('area =', area)\n        print('---')\n    def __str__(self):\n        print('Square')\n        print('side =', self.side)",
+        "detail": "30.10.after 14.00.task_2",
+        "documentation": {}
+    },
+    {
+        "label": "abcd",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_2",
+        "description": "30.10.after 14.00.task_2",
+        "peekOfCode": "abcd = Square(4)\nmichail = Circle(3)\nabcd.area()\nabcd.description()\nabcd.__str__()\nmichail.area()\nmichail.description()\nmichail.__str__()",
+        "detail": "30.10.after 14.00.task_2",
+        "documentation": {}
+    },
+    {
+        "label": "michail",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_2",
+        "description": "30.10.after 14.00.task_2",
+        "peekOfCode": "michail = Circle(3)\nabcd.area()\nabcd.description()\nabcd.__str__()\nmichail.area()\nmichail.description()\nmichail.__str__()",
+        "detail": "30.10.after 14.00.task_2",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "class Author():\n    def __init__(self, name, books = []):\n        self.name = name\n        self.books = books\n    def display_books(self):\n        for i, element in enumerate(self.books):\n            print((i + 1), element)\n    def add_book(self, book):\n        self.books.append(book)\n    def get_books_by_year(self, year):",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "class Book():\n    def __init__(self, title, year):\n        self.title = title\n        self.year = year\n    def __repr__(self):\n        return f'(\\'{self.title}\\', {self.year})'\new = Author('Paulo Coelho') \nrer = Book('s545as', 1944)\npou = Book('jynhgs', 1)\nrfv = Book('sdas', 1944)",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "ew",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "ew = Author('Paulo Coelho') \nrer = Book('s545as', 1944)\npou = Book('jynhgs', 1)\nrfv = Book('sdas', 1944)\nqaz = Book('s4s', 4)\nwsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "rer",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "rer = Book('s545as', 1944)\npou = Book('jynhgs', 1)\nrfv = Book('sdas', 1944)\nqaz = Book('s4s', 4)\nwsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "pou",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "pou = Book('jynhgs', 1)\nrfv = Book('sdas', 1944)\nqaz = Book('s4s', 4)\nwsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)\new.add_book(by)",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "rfv",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "rfv = Book('sdas', 1944)\nqaz = Book('s4s', 4)\nwsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)\new.add_book(by)\new.display_books()",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "qaz",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "qaz = Book('s4s', 4)\nwsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)\new.add_book(by)\new.display_books()\new.get_books_by_year(1944)",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "wsx",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "wsx = Book('sxcvs', 1488)\nby = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)\new.add_book(by)\new.display_books()\new.get_books_by_year(1944)\nprint(ew.get_books_by_year(1944))",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": "by",
+        "kind": 5,
+        "importPath": "30.10.after 14.00.task_3",
+        "description": "30.10.after 14.00.task_3",
+        "peekOfCode": "by = Book('swe', 1933)\new.add_book(rer)\new.add_book(pou)\new.add_book(rfv)\new.add_book(wsx)\new.add_book(by)\new.display_books()\new.get_books_by_year(1944)\nprint(ew.get_books_by_year(1944))",
+        "detail": "30.10.after 14.00.task_3",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  Bankaccount():\n    _transation_hictory = []\n    def __init__(self,  account_number, balance, account_holder):\n        self.account_number = account_number\n        self.balance = balance\n        self.account_holder = account_holder\n    def withdraw(self, amount):\n        if self.balance - amount >= 0:\n            self.balance = self.balance - amount\n            print('вы сняли с баланса:', amount) "
+        },
+        "kind": 6,
+        "importPath": "30.10.BankAccount",
+        "description": "30.10.BankAccount",
+        "peekOfCode": "class  Bankaccount():\n    _transation_hictory = []\n    def __init__(self,  account_number, balance, account_holder):\n        self.account_number = account_number\n        self.balance = balance\n        self.account_holder = account_holder\n    def withdraw(self, amount):\n        if self.balance - amount >= 0:\n            self.balance = self.balance - amount\n            print('вы сняли с баланса:', amount) ",
+        "detail": "30.10.BankAccount",
+        "documentation": {}
+    },
+    {
+        "label": "qwerty",
+        "kind": 5,
+        "importPath": "30.10.BankAccount",
+        "description": "30.10.BankAccount",
+        "peekOfCode": "qwerty = Bankaccount(12345, 9000, 'Me')\nqwerty.deposit(123)\nqwerty.withdraw(12)\nqwerty.display_balance()\nqwerty.deposit(1111111)\nqwerty.withdraw(1234567890)\nqwerty.get_transaction_history()",
+        "detail": "30.10.BankAccount",
+        "documentation": {}
+    },
+    {
+        "label": "Cat",
+        "kind": 6,
+        "importPath": "30.10.class and methods",
+        "description": "30.10.class and methods",
+        "peekOfCode": "class Cat:\n    name = None\n    age = None\n    color = None\n    isHappy = None\n    def __init__(self, name = None, age = None, color = None, isHappy = None):\n        self.set_data(name, age, color, isHappy)\n    def set_data(self, name = None, age = None, color = None, isHappy = None):\n        self.name = name\n        self.age = age",
+        "detail": "30.10.class and methods",
+        "documentation": {}
+    },
+    {
+        "label": "cat1",
+        "kind": 5,
+        "importPath": "30.10.class and methods",
+        "description": "30.10.class and methods",
+        "peekOfCode": "cat1 = Cat('ede', 3, 'red', True) \ncat2 = Cat()\ncat1.get_data()\nprint('----------------')\ncat2.get_data()",
+        "detail": "30.10.class and methods",
+        "documentation": {}
+    },
+    {
+        "label": "cat2",
+        "kind": 5,
+        "importPath": "30.10.class and methods",
+        "description": "30.10.class and methods",
+        "peekOfCode": "cat2 = Cat()\ncat1.get_data()\nprint('----------------')\ncat2.get_data()",
+        "detail": "30.10.class and methods",
+        "documentation": {}
+    },
+    {
+        "label": "Building",
+        "kind": 6,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "class Building:\n    year = None\n    city = None\n    def __init__(self, year, city):\n        self.year = year\n        self.city = city\n    def get_info(self):\n        print('Year:', self.year,'|', 'City:', self.city)\nclass House(Building):\n    def __init__(self, year, city, material, area, color, floors):",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "House",
+        "kind": 6,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "class House(Building):\n    def __init__(self, year, city, material, area, color, floors):\n        super(House, self).__init__(year, city)\n        self.material = material\n        self.area = area\n        self.color = color\n        self.floors = floors\n    def get_info(self):\n        super().get_info()\n        print('Material:', self.material,'|', 'Area of bUilding:', self.area,'m**2','|', 'Color:', self.color,'|', 'Floors:', self.floors)",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "School",
+        "kind": 6,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "class School(House):\n    def __init__(self, year, city, material, area, color, floors, people):\n        super(School, self).__init__(year, city, material, area, color, floors)\n        self.people = people\n    def get_info(self):\n        super().get_info()\n        print('People:', self.people)    \nclass Shop(House):\n    def __init__(self, year, city, material, area, color, floors, stores_profit = 0, fullness_of_the_products = 0):\n        super(Shop, self).__init__(year, city, material, area, color, floors)",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Shop",
+        "kind": 6,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "class Shop(House):\n    def __init__(self, year, city, material, area, color, floors, stores_profit = 0, fullness_of_the_products = 0):\n        super(Shop, self).__init__(year, city, material, area, color, floors)\n        self.stores_profit = stores_profit\n        self.fullness_of_the_products = fullness_of_the_products\n    def get_info(self):\n        super().get_info()\n        print('stores profit =', self.stores_profit, '$ per mounth')\n        print('fullness_of_the_products =', self.fullness_of_the_products, '%')\nclass Drug_store(Shop):",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Drug_store",
+        "kind": 6,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "class Drug_store(Shop):\n    pass\npharmacy = Drug_store(1944, 'New York', 'concrete', 1256, 'red', 2, 1200, 98)\npharmacy.get_info()",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "pharmacy",
+        "kind": 5,
+        "importPath": "30.10.Inheritance",
+        "description": "30.10.Inheritance",
+        "peekOfCode": "pharmacy = Drug_store(1944, 'New York', 'concrete', 1256, 'red', 2, 1200, 98)\npharmacy.get_info()",
+        "detail": "30.10.Inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "30.10.task before lanch",
+        "description": "30.10.task before lanch",
+        "peekOfCode": "class Car:\n    _fuel_level = 10\n    def __init__(self, brand, model, year, mileage, engine_started = False):\n        self.brand = brand\n        self.model = model\n        self.year = year\n        self.mileage = mileage\n        self.engine_started = engine_started\n    def get_fuel_level(self):\n        print('you`re fuel level = ', self.__fuel_level)",
+        "detail": "30.10.task before lanch",
+        "documentation": {}
+    },
+    {
+        "label": "mycar",
+        "kind": 5,
+        "importPath": "30.10.task before lanch",
+        "description": "30.10.task before lanch",
+        "peekOfCode": "mycar = Car('toyota', 'corolla', 2000, 32000)\nmycar.get_info()\nmycar.start_enegine()\nmycar.get_info()\nmycar.start_enegine()\nmycar.drive(123)\nmycar.get_info()\nmycar.get_fuel_level()\nmycar.refuel(23)\nmycar.get_fuel_level()",
+        "detail": "30.10.task before lanch",
+        "documentation": {}
+    },
+    {
+        "label": "mycar._fuel_level",
+        "kind": 5,
+        "importPath": "30.10.task before lanch",
+        "description": "30.10.task before lanch",
+        "peekOfCode": "mycar._fuel_level = 12",
+        "detail": "30.10.task before lanch",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "class Item:\n    def __init__(self, name, price):\n        self.name = name\n        self.price = price\n    def __str__(self):\n        return f\"{self.name}, {self.price}\"\nclass Order:\n    def __init__(self):\n        self.items = []\n    def add_item(self, item):",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "class Order:\n    def __init__(self):\n        self.items = []\n    def add_item(self, item):\n        self.items.append(item)\n    def remove_item(self, item):\n        self.items.remove(item)\n    def calculate_total(self):\n        total_price = 0\n        for item in self.items:",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "class Customer:\n    def __init__(self, name):\n        self.name = name\n        self.order = Order()\n    def create_order(self):\n        pass\n    def add_to_order(self, item):\n        self.order.add_item(item)\n    def finalize(self):\n        self.order.display_order()",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it1",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it1 = Item('pasta', 120)\nit2 = Item('meat', 999)\nit3 = Item('cofe', 1670)\nit4 = Item('tea', 140)\nit5 = Item('egg', 1)\nit6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it2",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it2 = Item('meat', 999)\nit3 = Item('cofe', 1670)\nit4 = Item('tea', 140)\nit5 = Item('egg', 1)\nit6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it3",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it3 = Item('cofe', 1670)\nit4 = Item('tea', 140)\nit5 = Item('egg', 1)\nit6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)\nmen1.add_to_order(it3)",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it4",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it4 = Item('tea', 140)\nit5 = Item('egg', 1)\nit6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)\nmen1.add_to_order(it3)\nmen1.finalize()",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it5",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it5 = Item('egg', 1)\nit6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)\nmen1.add_to_order(it3)\nmen1.finalize()",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "it6",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "it6 = Item('bread', 13)\nmen1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)\nmen1.add_to_order(it3)\nmen1.finalize()",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "men1",
+        "kind": 5,
+        "importPath": "31.10.before 13.00.task_1",
+        "description": "31.10.before 13.00.task_1",
+        "peekOfCode": "men1 = Customer('Bil')\nmen1.create_order()\nmen1.add_to_order(it1)\nmen1.add_to_order(it2)\nmen1.add_to_order(it6)\nmen1.add_to_order(it3)\nmen1.finalize()",
+        "detail": "31.10.before 13.00.task_1",
+        "documentation": {}
+    }
+]
