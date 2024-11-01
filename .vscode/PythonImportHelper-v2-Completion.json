@@ -13,7 +13,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)",
+        "peekOfCode": "def collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -22,7 +22,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\n#for (key, value) in nums_dict.items():\n    #result = target - key\n    #if nums_dict[result]:\n       # print(value)\ndef get_result(scr):",
+        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -31,7 +31,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)\nget_result(nums_dict)",
+        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\nget_result(nums_dict)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "target = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\nnums_dict = collect_ind(nums)",
+        "peekOfCode": "target = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "nums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\n#for (key, value) in nums_dict.items():\n    #result = target - key\n    #if nums_dict[result]:\n       # print(value)\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key",
+        "peekOfCode": "nums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\nget_result(nums_dict)",
         "detail": "01.11.home work",
         "documentation": {}
     },
