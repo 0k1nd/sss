@@ -22,7 +22,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)",
+        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n        elif len(answer) > 1:",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -31,7 +31,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n    print(answer)\nnums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\nget_result(nums_dict)",
+        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n        elif len(answer) > 1:\n            break\n    print(answer)\nnums_dict = collect_ind(nums)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "nums_dict = collect_ind(nums)\nprint_DICK(nums_dict)\nget_result(nums_dict)",
+        "peekOfCode": "nums_dict = collect_ind(nums)\nget_result(nums_dict)",
         "detail": "01.11.home work",
         "documentation": {}
     },

@@ -40,10 +40,11 @@ def get_result(scr):
         result = target - key
         if result in nums_dict and (scr)[result] != (scr)[key]:
             answer.append(value)
+        elif len(answer) > 1:
+            break
     print(answer)
     
 nums_dict = collect_ind(nums)
-print_DICK(nums_dict)
 
 
 get_result(nums_dict)       
