@@ -21,30 +21,47 @@
 #-109 <= target <= 109
 #Only one valid answer exists.
 
-nums = [1, 3, 6, 7, 8, 9, 10, 23, 30, 45, 98, 22, 1, 5, 15, 100]
-target = int(input())
+import time
+
+nums = [0, 1, 1, -3, -1]
 
 def collect_ind(src):
     dict = {}
     for i,x in enumerate(src):
-        dict[x] =  (i)
+        dict[i] = (x)
     return dict
 
+def get_key(scr, search):
+    for key, value in scr.items():
+        if value == search:
+            return(key)
+
 def print_DICK(scr):
-     for index, (keys, values) in enumerate((scr).items()):
-        print(f" value:{keys}   index:{values}")
+    dict = collect_ind(scr)
+    for index, (keys, values) in enumerate(dict.items()):
+        print(f" index:{keys}   value:{values}")
         
 def get_result(scr):
+    dict = collect_ind(scr)
     answer = []
-    for (key, value) in (scr).items():
-        result = target - key
-        if result in nums_dict and (scr)[result] != (scr)[key]:
-            answer.append(value)
-        elif len(answer) > 1:
-            break
+    for (key, value) in dict.items():
+        result = target - value
+        if result in dict and get_key(dict, result) != key and get_key(dict, result) != None:
+            answer.append(get_key(dict, result))
+            answer.append(key)
+            if len(answer) >= 2:
+                break
     print(answer)
+
+target = int(input())    
+
+def main(scr):
+    start_time = time.time()
+    get_result(scr)
+    end_time = time.time()
+    print(float((end_time - start_time)*10000))
     
-nums_dict = collect_ind(nums)
+main(nums)
+    
 
-
-get_result(nums_dict)       
+            

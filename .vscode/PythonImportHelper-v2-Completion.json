@@ -1,5 +1,14 @@
 [
     {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "abc",
         "kind": 6,
         "isExtraImport": true,
@@ -13,7 +22,16 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []",
+        "peekOfCode": "def collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[i] = (x)\n    return dict\ndef get_key(scr, search):\n    for key, value in scr.items():\n        if value == search:\n            return(key)\ndef print_DICK(scr):",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "get_key",
+        "kind": 2,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "def get_key(scr, search):\n    for key, value in scr.items():\n        if value == search:\n            return(key)\ndef print_DICK(scr):\n    dict = collect_ind(scr)\n    for index, (keys, values) in enumerate(dict.items()):\n        print(f\" index:{keys}   value:{values}\")\ndef get_result(scr):\n    dict = collect_ind(scr)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -22,7 +40,7 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n        elif len(answer) > 1:",
+        "peekOfCode": "def print_DICK(scr):\n    dict = collect_ind(scr)\n    for index, (keys, values) in enumerate(dict.items()):\n        print(f\" index:{keys}   value:{values}\")\ndef get_result(scr):\n    dict = collect_ind(scr)\n    answer = []\n    for (key, value) in dict.items():\n        result = target - value\n        if result in dict and get_key(dict, result) != key and get_key(dict, result) != None:",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -31,7 +49,16 @@
         "kind": 2,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "def get_result(scr):\n    answer = []\n    for (key, value) in (scr).items():\n        result = target - key\n        if result in nums_dict and (scr)[result] != (scr)[key]:\n            answer.append(value)\n        elif len(answer) > 1:\n            break\n    print(answer)\nnums_dict = collect_ind(nums)",
+        "peekOfCode": "def get_result(scr):\n    dict = collect_ind(scr)\n    answer = []\n    for (key, value) in dict.items():\n        result = target - value\n        if result in dict and get_key(dict, result) != key and get_key(dict, result) != None:\n            answer.append(get_key(dict, result))\n            answer.append(key)\n            if len(answer) >= 2:\n                break",
+        "detail": "01.11.home work",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "01.11.home work",
+        "description": "01.11.home work",
+        "peekOfCode": "def main(scr):\n    start_time = time.time()\n    get_result(scr)\n    end_time = time.time()\n    print(float((end_time - start_time)*10000))\nmain(nums)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -40,7 +67,7 @@
         "kind": 5,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "nums = [1, 3, 6, 7, 8, 9, 10, 23, 30, 45, 98, 22, 1, 5, 15, 100]\ntarget = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")",
+        "peekOfCode": "nums = [0, 1, 1, -3, -1]\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[i] = (x)\n    return dict\ndef get_key(scr, search):\n    for key, value in scr.items():\n        if value == search:\n            return(key)",
         "detail": "01.11.home work",
         "documentation": {}
     },
@@ -49,17 +76,35 @@
         "kind": 5,
         "importPath": "01.11.home work",
         "description": "01.11.home work",
-        "peekOfCode": "target = int(input())\ndef collect_ind(src):\n    dict = {}\n    for i,x in enumerate(src):\n        dict[x] =  (i)\n    return dict\ndef print_DICK(scr):\n     for index, (keys, values) in enumerate((scr).items()):\n        print(f\" value:{keys}   index:{values}\")\ndef get_result(scr):",
+        "peekOfCode": "target = int(input())    \ndef main(scr):\n    start_time = time.time()\n    get_result(scr)\n    end_time = time.time()\n    print(float((end_time - start_time)*10000))\nmain(nums)",
         "detail": "01.11.home work",
         "documentation": {}
     },
     {
-        "label": "nums_dict",
+        "label": "get_result",
+        "kind": 2,
+        "importPath": "11.11.task_1",
+        "description": "11.11.task_1",
+        "peekOfCode": "def get_result():\n    nums = []\n    vas_score = 0\n    pets_score = 0\n    count = 0\n    while True:\n        i = int(input())\n        nums.append(i)\n        for item in (nums):\n            if item % 5 == 0 and item % 3 != 0 :",
+        "detail": "11.11.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "target",
         "kind": 5,
-        "importPath": "01.11.home work",
-        "description": "01.11.home work",
-        "peekOfCode": "nums_dict = collect_ind(nums)\nget_result(nums_dict)",
-        "detail": "01.11.home work",
+        "importPath": "11.11.task_1",
+        "description": "11.11.task_1",
+        "peekOfCode": "target = int(input())\ncount_in = int(input())\ndef get_result():\n    nums = []\n    vas_score = 0\n    pets_score = 0\n    count = 0\n    while True:\n        i = int(input())\n        nums.append(i)",
+        "detail": "11.11.task_1",
+        "documentation": {}
+    },
+    {
+        "label": "count_in",
+        "kind": 5,
+        "importPath": "11.11.task_1",
+        "description": "11.11.task_1",
+        "peekOfCode": "count_in = int(input())\ndef get_result():\n    nums = []\n    vas_score = 0\n    pets_score = 0\n    count = 0\n    while True:\n        i = int(input())\n        nums.append(i)\n        for item in (nums):",
+        "detail": "11.11.task_1",
         "documentation": {}
     },
     {
