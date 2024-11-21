@@ -136,7 +136,7 @@
         "kind": 2,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "def remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)\nresult = remove_duplicates(all_variable)\nlist_of_variable = []\nfor nums in result:\n    str_num = (''.join(nums))\n    vatiant = '({})'\n    rkekgne = vatiant.format(str_num)\n    list_of_variable.append(rkekgne)",
+        "peekOfCode": "def remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)\nresult = remove_duplicates(all_variable)\nlist_of_variable = []\nanswer = []\nfor combination in result:\n    counter = 0\n    list_of_variable.append(combination)\n    for item in combination:",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -145,16 +145,7 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "n = int(input())\ncon = (n - 1)\nlist_skob = []\ni = 0\nwhile i < con:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nprint(list_skob)\nall_variable = list(permutations(list_skob))",
-        "detail": "21.11.task 1",
-        "documentation": {}
-    },
-    {
-        "label": "con",
-        "kind": 5,
-        "importPath": "21.11.task 1",
-        "description": "21.11.task 1",
-        "peekOfCode": "con = (n - 1)\nlist_skob = []\ni = 0\nwhile i < con:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nprint(list_skob)\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):",
+        "peekOfCode": "n = int(input())\nlist_skob = []\ni = 0\nwhile i < n:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -163,7 +154,7 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "list_skob = []\ni = 0\nwhile i < con:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nprint(list_skob)\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)",
+        "peekOfCode": "list_skob = []\ni = 0\nwhile i < n:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -172,7 +163,7 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "i = 0\nwhile i < con:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nprint(list_skob)\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)",
+        "peekOfCode": "i = 0\nwhile i < n:\n    i += 1\n    list_skob.append('(')\n    list_skob.append(')')\nall_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)\nresult = remove_duplicates(all_variable)",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -181,7 +172,7 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "all_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)\nresult = remove_duplicates(all_variable)\nlist_of_variable = []\nfor nums in result:\n    str_num = (''.join(nums))\n    vatiant = '({})'\n    rkekgne = vatiant.format(str_num)",
+        "peekOfCode": "all_variable = list(permutations(list_skob))\ndef remove_duplicates(list_of_tuples):\n    unique_items = set(list_of_tuples)\n    return list(unique_items)\nresult = remove_duplicates(all_variable)\nlist_of_variable = []\nanswer = []\nfor combination in result:\n    counter = 0\n    list_of_variable.append(combination)",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -190,7 +181,7 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "result = remove_duplicates(all_variable)\nlist_of_variable = []\nfor nums in result:\n    str_num = (''.join(nums))\n    vatiant = '({})'\n    rkekgne = vatiant.format(str_num)\n    list_of_variable.append(rkekgne)\nprint(list_of_variable)",
+        "peekOfCode": "result = remove_duplicates(all_variable)\nlist_of_variable = []\nanswer = []\nfor combination in result:\n    counter = 0\n    list_of_variable.append(combination)\n    for item in combination:\n        if item == ')':\n            counter -= 1\n        elif counter < 0:",
         "detail": "21.11.task 1",
         "documentation": {}
     },
@@ -199,7 +190,16 @@
         "kind": 5,
         "importPath": "21.11.task 1",
         "description": "21.11.task 1",
-        "peekOfCode": "list_of_variable = []\nfor nums in result:\n    str_num = (''.join(nums))\n    vatiant = '({})'\n    rkekgne = vatiant.format(str_num)\n    list_of_variable.append(rkekgne)\nprint(list_of_variable)",
+        "peekOfCode": "list_of_variable = []\nanswer = []\nfor combination in result:\n    counter = 0\n    list_of_variable.append(combination)\n    for item in combination:\n        if item == ')':\n            counter -= 1\n        elif counter < 0:\n            list_of_variable.remove(combination)",
+        "detail": "21.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "answer",
+        "kind": 5,
+        "importPath": "21.11.task 1",
+        "description": "21.11.task 1",
+        "peekOfCode": "answer = []\nfor combination in result:\n    counter = 0\n    list_of_variable.append(combination)\n    for item in combination:\n        if item == ')':\n            counter -= 1\n        elif counter < 0:\n            list_of_variable.remove(combination)\n            break",
         "detail": "21.11.task 1",
         "documentation": {}
     },
