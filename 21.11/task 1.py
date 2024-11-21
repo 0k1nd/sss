@@ -15,13 +15,12 @@ while i < con:
 print(list_skob)
     
 all_variable = list(permutations(list_skob))
+def remove_duplicates(list_of_tuples):
+    unique_items = set(list_of_tuples)
+    return list(unique_items)
 
-def find_duplicates(list_of_tuples):
-    counter = Counter(list_of_tuples)
-    duplicates = [item for item, count in counter.items() if count > 1]
-    return duplicates
 
-result = find_duplicates(all_variable)
+result = remove_duplicates(all_variable)
 list_of_variable = []
 for nums in result:
     str_num = (''.join(nums))
@@ -30,3 +29,4 @@ for nums in result:
     list_of_variable.append(rkekgne)
     
 print(list_of_variable)
+
