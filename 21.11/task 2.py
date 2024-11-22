@@ -1,5 +1,6 @@
 
 
+
 '''403. Прыжок лягушки
 Жесткий
 Темы
@@ -19,7 +20,7 @@
 
 Пример 1:
 
-Ввод: камни = [0,1,3,5,6,8,12,17]
+Ввод: камни = [0,1,3,5,6,8,12,17] не правильное условие
 Вывод: правда
 Пояснение: Лягушка может допрыгнуть до последнего камня, перепрыгнув на 1 единицу до 2-го камня, 
 затем на 2 единицы до 3-го камня, затем на 2 единицы до 4-го камня, затем на 3 единицы до 6-го камня, на 4 единицы до 7-го камня, 
@@ -31,34 +32,31 @@
 Вывод: ложь
 Пояснение: Невозможно допрыгнуть до последнего камня, поскольку расстояние между 5-м и 6-м камнями слишком велико.'''
 
-stones = [0,1,3,5,6,8,11,14]
+stones = [0,1,2,4,6,8]
 k = 1
 
 
-def get_previous(ston):
-    for i, ston in enumerate(stones):
-        ston
-        previous = dict[i - 1]
-        return previous
+def get_result(k):
+    for i in range(1, len(stones)):
+        if stones[1] - stones[0] != 1:
+            print('False')
+            break
+        a, b = stones[i - 1], stones[i]
+        if b - a == k:
+            pass
+        elif b - a == k-1:
+            pass
+        elif b - a == k+1:
+            pass
+        else:
+            print('False')
+            break
+        k = b - a
+        
+        if i == len(stones)-1:
+            print('True')
 
-    
-for i in range(1, len(stones)):
-    a, b = stones[i - 1], stones[i]
-    if b - a == k:
-        pass
-    elif b - a == k-1:
-        pass
-    elif b - a == k+1:
-        pass
-    else:
-        print('False')
-        break
-    k = b - a
-    
-    if i == len(stones)-1:
-        print('True')
-    
-    
+get_result(k)
 
     
 
