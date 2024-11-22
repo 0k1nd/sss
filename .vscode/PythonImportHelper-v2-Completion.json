@@ -25,6 +25,22 @@
         "documentation": {}
     },
     {
+        "label": "groupby",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "Counter",
         "importPath": "collections",
         "description": "collections",
@@ -228,6 +244,87 @@
         "description": "21.11.task 2",
         "peekOfCode": "k = 1\ndef get_result(k):\n    for i in range(1, len(stones)):\n        if stones[1] - stones[0] != 1:\n            print('False')\n            break\n        a, b = stones[i - 1], stones[i]\n        if b - a == k:\n            pass\n        elif b - a == k-1:",
         "detail": "21.11.task 2",
+        "documentation": {}
+    },
+    {
+        "label": "iterlen",
+        "kind": 2,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "def iterlen(it):\n    return sum(1 for _ in it)\ndef max_seq(s):\n    result = {}\n    for letter, group in groupby(s):\n        l = iterlen(group)\n        if result.get(letter, 0) < l:\n            result[letter] = l\n    return result\ndef get_result(list):",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "max_seq",
+        "kind": 2,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "def max_seq(s):\n    result = {}\n    for letter, group in groupby(s):\n        l = iterlen(group)\n        if result.get(letter, 0) < l:\n            result[letter] = l\n    return result\ndef get_result(list):\n    max_key = max(max_seq(list), key=max_seq(list).get)\n    result = max_seq(list)[max_key] + k",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "get_result",
+        "kind": 2,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "def get_result(list):\n    max_key = max(max_seq(list), key=max_seq(list).get)\n    result = max_seq(list)[max_key] + k\n    if result <= len(list):\n        print(result)\n    else:\n        print(len(list))\nget_result(nums)",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "nums = [1, 1, 2, 2, 2, 1, 1]\nk = 2\nВывод:\n5\nОбъяснение:\n    Можно изменить два элемента [1, 1, 2, 2, 2, 1, 1] → [2, 2, 2, 2, 2, 1, 1].\n    Максимальный подмассив одинаковых чисел имеет длину 5.\n____\nПример 2\nВвод:",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "k = 2\nВывод:\n5\nОбъяснение:\n    Можно изменить два элемента [1, 1, 2, 2, 2, 1, 1] → [2, 2, 2, 2, 2, 1, 1].\n    Максимальный подмассив одинаковых чисел имеет длину 5.\n____\nПример 2\nВвод:\nnums = [1, 3, 3, 3, 4]",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "nums = [1, 3, 3, 3, 4]\nk = 1\nВывод:\n4\nОбъяснение:\n    Можно изменить один элемент [1, 3, 3, 3, 4] → [3, 3, 3, 3, 4].\n    Максимальный подмассив одинаковых чисел имеет длину 4'''\nfrom collections import Counter\nfrom itertools import groupby\nnums = [1, 1, 2, 2, 2, 1, 1]",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "k = 1\nВывод:\n4\nОбъяснение:\n    Можно изменить один элемент [1, 3, 3, 3, 4] → [3, 3, 3, 3, 4].\n    Максимальный подмассив одинаковых чисел имеет длину 4'''\nfrom collections import Counter\nfrom itertools import groupby\nnums = [1, 1, 2, 2, 2, 1, 1]\nk = int(input())",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "nums = [1, 1, 2, 2, 2, 1, 1]\nk = int(input())\ndef iterlen(it):\n    return sum(1 for _ in it)\ndef max_seq(s):\n    result = {}\n    for letter, group in groupby(s):\n        l = iterlen(group)\n        if result.get(letter, 0) < l:\n            result[letter] = l",
+        "detail": "22.11.task 1",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "22.11.task 1",
+        "description": "22.11.task 1",
+        "peekOfCode": "k = int(input())\ndef iterlen(it):\n    return sum(1 for _ in it)\ndef max_seq(s):\n    result = {}\n    for letter, group in groupby(s):\n        l = iterlen(group)\n        if result.get(letter, 0) < l:\n            result[letter] = l\n    return result",
+        "detail": "22.11.task 1",
         "documentation": {}
     },
     {
